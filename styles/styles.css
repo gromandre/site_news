@@ -1,0 +1,77 @@
+html,
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-family: Arial;
+} 
+
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.fixed-container {
+  position: relative;
+
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.fixed {
+  position: fixed;
+
+  width: 100%;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__burger__new {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header__burger__new {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    padding: 0;
+
+    background: url("https://www.apunis.it/brand/apunis/img/ico/android_menu.png");
+    background-size: contain;
+    border: 0;
+  }
+
+  .active {
+    display: block;
+  }
+
+  .close {
+    margin-right: 10px;
+
+    background-image: url("https://lesdomtorg.ru/assets/images/panorama/images/close3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px;
+    cursor: pointer;
+  }
+
+  .fixed-container {
+    padding: 0;
+  }
+
+  .fixed__container__mobile {
+    padding: 0 20px;
+  }
+}
+
+@media  (max-width: 425px) {
+}
+
+

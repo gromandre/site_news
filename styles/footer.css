@@ -1,0 +1,243 @@
+.footer {
+  position: relative;
+
+  padding-top: 57px;
+
+/* Style for "футер" */
+
+  color: #ffffff;
+
+  background-color: #00122f;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.item__footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.menu-fotter {
+  font-size: 15px;
+  color: #ffffff;
+} 
+
+.ul_left {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  column-count: 2;
+  column-gap: 42px;
+}
+
+.ul_left li {
+  margin-bottom: 15px;
+
+  list-style-type: none;
+}
+
+.ul_left li a {
+  font-size: 16px;
+  letter-spacing: -0.32px;
+}
+
+.footer__conteiner__right {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.about {
+  display: block;
+}
+
+.about ul {
+  margin: 0;
+  padding-left: 4px;
+}
+
+.about ul li {
+  margin-bottom: 14px;
+
+  list-style-type: none;
+}
+
+.about ul li a {
+  font-size: 16px;
+  letter-spacing: -0.32px;
+}
+
+.about img {
+  margin: 5px 0 15px;
+  margin-bottom: 15px;
+}
+
+/* Style for "соцсети" */
+.social_links {
+  display: flex;
+  width: 222px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.social_links a {
+  display: block;
+  margin-right: 20px;
+}
+
+.social_links li:last-child a {
+  margin-right: 0;
+}
+
+.vk_icon {
+  width: 40px;
+  height: 40px;
+
+  background-image: url(img/vk.png);
+  background-repeat: no-repeat;
+}
+
+.fb_icon {
+  width: 40px;
+  height: 40px;
+
+  background-image: url(img/fb.png);
+  background-repeat: no-repeat;
+}
+
+.tw_icon {
+  width: 40px;
+  height: 40px;
+
+  background-image: url(img/tw.png);
+  background-repeat: no-repeat;
+}
+
+.inst_icon {
+  width: 40px;
+  height: 40px;
+
+  background-image: url(img/inst.png);
+  background-repeat: no-repeat;
+}
+
+.contacts {
+  margin-top: 45px;
+}
+
+.contacts a {
+  font-size: 18px;
+  letter-spacing: -0.36px;
+}
+
+.contacts img {
+  margin-right: 15px;
+}
+
+.tel {
+  position: relative;
+
+  margin-bottom: 24px;
+  padding-left: 34px;
+
+  background-image: url(img/call-answer.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.email {
+  padding-left: 34px;
+
+  font-size: 18px;
+  letter-spacing: -0.36px;
+
+  background-image: url(img/envelope.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.background {
+  width: 100%;
+  height: 34px;
+  padding-top: 15px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+
+/* Text style for "©,  Новост" */
+  letter-spacing: -0.28px;
+
+  background-image: url(img/Shape_3.png);
+  background-repeat: repeat-x;
+
+/* Style for "© Новостно" */
+  opacity: 0.4;
+}
+
+@media (max-width: 768px) {
+  .item__footer {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .ul_left {
+    width: 75%;
+  }
+
+  .footer__conteiner__right {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin-top: 25px;
+    padding-top: 25px;
+
+    background-image: url(img/Shape_3.png);
+    background-repeat: repeat-x;
+  }
+
+  .about img {
+    margin-bottom: 30px;
+  }
+
+  .about ul {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .about ul li a {
+    margin-right: 19px;
+  }
+
+  .background {
+    height: 100%;
+    padding-bottom: 15px;
+  }
+}
+
+@media (max-width: 464px) {
+  .ul_left {
+    width: auto;
+  }
+
+  .footer__conteiner__right {
+    flex-direction: column;
+  }
+
+  .about ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+

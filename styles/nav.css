@@ -1,0 +1,118 @@
+.menu-container {
+  padding-bottom: 34px;
+}
+
+.menu-container ul {
+  bottom: 32px;
+
+  display: flex;
+  justify-content: space-between;
+  height: 16px;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Arial MT";
+  color: #000000;
+  letter-spacing: -0.32px;
+}
+
+.menu-container ul li {
+  display: inline-block;
+  padding-left: 0;
+}
+
+.menu-container ul li a {
+  display: inline-block;
+  margin-right: 9px;
+
+  font-size: 16px;
+  font-family: Arial;
+  color: #000000;
+  text-decoration: none;
+  letter-spacing: -0.32px;
+}
+
+.menu-container li:not(:first-child):before {
+  content: "/";
+
+  margin-right: 20px;
+
+  color: #91919f;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+  .menu-container li:not(:first-child):before {
+    margin: 0 8px 0 auto;
+  }
+}
+
+@media (max-width: 980px) {
+  .menu-container ul li a {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 895px) {
+  .menu-container li:not(:first-child):before {
+    margin: 8px;
+  }
+}
+
+@media (max-width: 812px) {
+  .menu-container li:not(:first-child):before {
+    margin: 6px;
+  }
+}
+
+@media (max-width: 812px) {
+  .menu-container li:not(:first-child):before {
+    margin: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-container {
+    position: fixed;
+    position: absolute;
+    top: 101px;
+    left: 0;
+    z-index: 1;
+
+    display: none;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    padding: 10px 25px 0 25px;
+
+    background-color: #f9f9f9;
+    background-image: url(img/central-bg-top.png);
+    background-repeat: repeat-x;
+  }
+  .menu-container ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu-container ul li {
+    margin: 5px 0;
+    padding-top: 5px;
+
+    font-size: 16px;
+    font-family: Arial;
+    letter-spacing: -0.32px;
+  }
+
+  .menu-container ul li:not(:first-child):before {
+    content: none;
+  }
+
+  .menu-container ul li:not(:first-child) {
+    border-top: solid 1px grey;
+  }
+}
